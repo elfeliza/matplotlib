@@ -15,6 +15,7 @@ for i in range(1, 6):
         plt.title("Data of Santa Claus", fontsize=17)
 
     plt.legend()
+    plt.gca().set_aspect('equal', adjustable='box')
     plt.savefig('../00%d.png' % i)
     plt.show()
 
